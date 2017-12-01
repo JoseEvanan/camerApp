@@ -11,7 +11,7 @@ export class HomePage {
   public photos : any;
   public base64Image : string;
   constructor(public navCtrl : NavController, private camera : Camera, private alertCtrl : AlertController) {
-
+  //https://www.9lessons.info/2017/04/ionic2-angular2-camera-native-multiple.html
   }
   ngOnInit() {
     this.photos = [];
@@ -37,6 +37,15 @@ export class HomePage {
         ]
       });
     confirm.present();
+  }
+  sendPhoto(index) {
+    let alert = this.alertCtrl.create({
+      title: 'Enviado',
+      subTitle: 'Example subtitle',
+      buttons: ['OK']
+  });
+
+  alert.present();
   }
 
   takePhoto() {

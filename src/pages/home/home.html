@@ -17,6 +17,7 @@
       <ion-col col-6 *ngFor="let photo of photos; let id = index">
         <ion-card class="block">
           <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>
+          <ion-icon name="send" class="sendIcon" (click)="sendPhoto(id)"></ion-icon>
           <img [src]="photo" *ngIf="photo" />
         </ion-card>
       </ion-col>

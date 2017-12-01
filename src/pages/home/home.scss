@@ -9,5 +9,13 @@ page-home {
     .deleteIcon:before {
       font-size: 30px !important;
     }
+    .sendIcon {
+      position: absolute !important;
+      color: #ffffff !important;
+      margin-left: 5% !important;
+    }
+    .sendIcon:before {
+      font-size: 30px !important;
+    }
     }
   }
